@@ -1,0 +1,12 @@
+Weather Dashboard
+
+- I first styled it directly in the console.  It was my first time doing that and it was awesome.
+- Then, i created my JS file once i had the page styled and could go no further.
+- In JS i first created my API key var and then I created the functions I thought I would need.
+    - 1st Created function getLocation(city) this was based on the API docs, this takes the user input from event listener.
+    - 2nd Created function getCurrent(lat, lon) this was to take in the function getLocation and convert to lat and lon.
+    - 3rd/4th Created the event listener to pass into the getLocation function.  Created vars for .temp, .humid, .windSpeed.
+    - At some point and throughout the project I had to go into the console and look at the arrays to determine what I wanted to 
+        include in my displayed data.  There was a lot of stuff that could have been interesting to include, like possibly creating
+        a seperate div to display 'feels-like.' I will probably go back and do this, it was really fun.
+- All functions 'talk/refer' to other functions, starting with the even listener.
