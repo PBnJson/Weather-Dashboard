@@ -2,30 +2,96 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <!-- copy and paste some other google font here -->
     <title>Weather Dashboard</title>
 </head>
 
 <body>
-    <div class="card">
-        <div class="search">
-            <input type="text" class="search-bar" id="search-bar" placeholder="location">
-            <button class="search-btn">SVG img</button>
+    <div class="card-container">
+        <div class="card">
+            <div class="time-container">THE TIME GOES HERE</div>
         </div>
-        <div class="weather">
-            <span>Weather in <h1 class="city"></h1></span>
-            </h2>
-            <h2 class="temp">
+        <div class="card">
+            <div class="search">
+                <input type="text" class="search-bar" id="search-bar" placeholder="location" />
+                <div class="buttons">
+                    <button class="search-btn">Current</button>
+                    <button class="forecast">Five Day</button>
+                </div>
+            </div>
+            <div class="weather">
+                <p>
+                    Weather in
+                    <span class="city"></span>
+                </p>
+                <h2 class="temp"></h2>
+            </div>
+            <img src="" alt="" class="icon" />
+            <div class="description"></div>
+            <div class="humid"></div>
+            <div class="currentWind"></div>
         </div>
-        <img src="" alt="" class="icon">
-        <div class="description"></div>
-        <div class="humid"></div>
-        <div class="wind"></div>
+
+        <div class="card">
+            <p>HISTORY</p>
+            <div class="history-container"></div>
+        </div>
     </div>
+    <div class="fiveDays">
+        <div class="forecast-container">
+            <div class="card forecast" style="width: 18rem">
+                <div class="card-body">
+                    <div class="icon-container"></div>
+                    <h5 class="card-title">DAY 1</h5>
+
+                    <p class="temp"></p>
+                    <p class="wind"></p>
+                </div>
+            </div>
+
+            <div class="card forecast" style="width: 18rem">
+                <div class="card-body">
+                    <div class="icon-container"></div>
+                    <h5 class="card-title">DAY 2</h5>
+
+                    <p class="temp"></p>
+                    <p class="wind"></p>
+                </div>
+            </div>
+
+            <div class="card forecast" style="width: 18rem">
+                <div class="card-body">
+                    <div class="icon-container"></div>
+                    <h5 class="card-title">DAY 3</h5>
+
+                    <p class="temp"></p>
+                    <p class="wind"></p>
+                </div>
+            </div>
+
+            <div class="card forecast" style="width: 18rem">
+                <div class="card-body">
+                    <div class="icon-container"></div>
+                    <h5 class="card-title">DAY 4</h5>
+
+                    <p class="temp"></p>
+                    <p class="wind"></p>
+                </div>
+            </div>
+            <div class="card forecast" style="width: 18rem">
+                <div class="card-body">
+                    <div class="icon-container"></div>
+                    <h5 class="card-title">DAY 5</h5>
+
+                    <p class="temp"></p>
+                    <p class="wind"></p>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="./main.js"></script>
 </body>

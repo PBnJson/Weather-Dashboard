@@ -1,7 +1,9 @@
 Weather Dashboard
 
 - I first styled it directly in the console.  It was my first time doing that and it was awesome.
+
 - Then, i created my JS file once i had the page styled and could go no further.
+
 - In JS i first created my API key var and then I created the functions I thought I would need.
     - 1st Created function getLocation(city) this was based on the API docs, this takes the user input from event listener.
     - 2nd Created function getCurrent(lat, lon) this was to take in the function getLocation and convert to lat and lon.
@@ -9,4 +11,19 @@ Weather Dashboard
     - At some point and throughout the project I had to go into the console and look at the arrays to determine what I wanted to 
         include in my displayed data.  There was a lot of stuff that could have been interesting to include, like possibly creating
         a seperate div to display 'feels-like.' I will probably go back and do this, it was really fun.
+        
 - All functions 'talk/refer' to other functions, starting with the even listener.
+
+- Added glassmorphism styling
+
+- IMPORTANT - for the 5 Day Forecast
+    - Console logs an array of 40 items, 3 hour updates for 5 days. So... I had to use data.map to find and target to specific array property I wanted to display.
+    - Then, the if statement says if index doesn't = 0 AND is a multiple of 7, display the wind speed, temp, humidity, and display the weather icon.
+    - The next if statement is there to display the current, DAY 1, data.
+    - The last part is the for statement which starts by targeting only up to 5 containters.  Then any element with the class 'wind' displays wind, temp, humidity, and the weather icon.
+    - Every temp displayed was wrapped in a Math.round function to eliminate the displayed decimal places.
+    - function displayProperties was copied and pasted into the the display5Day function.
+
+- function displayProperties - this displays the current data for the user input.
+
+- This was not an easy assignment!
